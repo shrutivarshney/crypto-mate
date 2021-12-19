@@ -1,8 +1,16 @@
-import 'tailwindcss/tailwind.css'
-import './App.scss'
+import React from "react"
+import { BrowserRouter } from "react-router-dom"
+import "./App.scss"
+import Navbar from "./components/Navbar/navbar.js"
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function App() {
+	return (
+		<BrowserRouter>
+			<div className="App">
+        <Navbar />
+			</div>		
+		</BrowserRouter>
+	)
 }
 
-export default MyApp
+export default App

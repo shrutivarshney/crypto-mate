@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export const Navbar = () => {
+const Navbar = () => {
   const [active, setActive] = useState(false);
 
   const handleClick = () => {
@@ -9,15 +9,15 @@ export const Navbar = () => {
 
   return (
     <div>
-      <nav className='flex items-center flex-wrap bg-custom-blue p-2 '>
-        <div className='container mx-auto'>
-                <a href='/' className='inline-flex items-center p-2 mr-4 '>
-                <span className='text-xl text-white font-bold uppercase tracking-widest'>
+      <nav className='flex flex-wrap items-center p-2 bg-custom-blue '>
+        <div className='container'>
+                <a href='/' className='inline-flex items-center p-2 mr-4'>
+                <span className='text-xl font-bold tracking-widest text-white uppercase'>
                     CRYPTOMATE
                 </span>
                 </a>
             <button
-                className=' inline-flex p-3 hover:bg-custom-orange rounded lg:hidden text-white ml-auto float-right hover:text-white outline-none'
+                className='inline-flex float-right p-3 ml-auto text-white rounded outline-none hover:bg-custom-orange lg:hidden hover:text-white'
                 onClick={handleClick}
             >
                 <svg
@@ -41,20 +41,20 @@ export const Navbar = () => {
                 active ? '' : 'hidden'
                 }   w-full lg:inline-flex lg:flex-grow lg:w-auto float-right`}
             >
-                <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
-                        <a href='/'className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-custom-orange hover:text-white '>
+                <div className='flex flex-col items-start w-full lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto lg:items-center lg:h-auto'>
+                        <a href='/'className='items-center justify-center w-full px-3 py-2 font-bold text-white rounded lg:inline-flex lg:w-auto hover:bg-custom-orange hover:text-white '>
                         Home
                         </a>
-                        <a href='/' className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-custom-orange hover:text-white'>
+                        <a href='/' className='items-center justify-center w-full px-3 py-2 font-bold text-white rounded lg:inline-flex lg:w-auto hover:bg-custom-orange hover:text-white'>
                         Services
                         </a>
-                        <a href='/' className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-custom-orange hover:text-white'>
+                        <a href='/' className='items-center justify-center w-full px-3 py-2 font-bold text-white rounded lg:inline-flex lg:w-auto hover:bg-custom-orange hover:text-white'>
                         Pricing
                         </a>
-                        <a href='/' className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-custom-orange hover:text-white'>
+                        <a href='/' className='items-center justify-center w-full px-3 py-2 font-bold text-white rounded lg:inline-flex lg:w-auto hover:bg-custom-orange hover:text-white'>
                         Learn
                         </a>
-                        <a href='/' className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-custom-orange hover:text-white'>
+                        <a href='/' className='items-center justify-center w-full px-3 py-2 font-bold text-white rounded lg:inline-flex lg:w-auto hover:bg-custom-orange hover:text-white'>
                         Contact
                         </a>
                 </div>
@@ -64,3 +64,5 @@ export const Navbar = () => {
     </div>
   );
 };
+
+export default Navbar
