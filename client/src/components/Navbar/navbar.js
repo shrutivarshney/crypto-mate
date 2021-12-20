@@ -8,13 +8,11 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <div className= "navbar">
       <nav className='flex flex-wrap items-center p-2 bg-custom-blue '>
         <div className='container'>
                 <a href='/' className='inline-flex items-center p-2 mr-4'>
-                <span className='text-xl font-bold tracking-widest text-white uppercase'>
-                    CRYPTOMATE
-                </span>
+                <img className='h-40 w-40' src='/logo.png' />
                 </a>
             <button
                 className='inline-flex float-right p-3 ml-auto text-white rounded outline-none hover:bg-custom-orange lg:hidden hover:text-white'
