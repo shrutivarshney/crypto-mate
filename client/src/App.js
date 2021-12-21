@@ -7,7 +7,7 @@ import Cards from "./components/Cards/card.js"
 function App() {
 	return (
 		<BrowserRouter>
-			<div className="App bg-[url('../public/bg.png')]">
+			<div className="App bg-[url('../public/bg.png')] bg-repeat font-poppins">
 				<Navbar />
 				<Cards />
 			</div>		
