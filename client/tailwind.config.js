@@ -10,7 +10,8 @@ module.exports = {
 
       colors: {
         'custom-blue' : '#061122',
-        'custom-green' : '#5EC886'
+        'custom-green' : '#42db7c',
+        'custom-hover-green': '#48f188'
       }
     },
   },
