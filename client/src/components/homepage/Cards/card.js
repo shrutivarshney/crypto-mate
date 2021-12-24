@@ -1,37 +1,21 @@
 import React from 'react';
 import axios from 'axios';
-import { useState, useEffect } from "react";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
-const Cards = () => {
+const Cards = ({name, image, symbol, current_price, last_updated, high_24h, low_24h}) => {
 
-    const [coins, setCoins] = useState([]);
-
-    useEffect(() => {
-        axios.get('https://api.coingecko.com/api/v3/coins/markets?vs_currency=inr&order=market_cap_desc&per_page=100&page=1&sparkline=false')
-        .then(res => {
-            setCoins(res.data);
-        }).catch(error => alert('Oops! We are facing an error.'))
-    }, []);
     
   return (
     <div>
-            <h1 className="text-center text-white font-bold mb-6 text-xl">Today's Featured Exchange</h1>
-            <div className="container mx-auto px-10 sm:px-0 py-2 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
-            <div className="text-center text-white rounded shadow-md shadow-custom-green py-5">
-                <h2 className="text-2xl font-bold">1</h2>
+            <div className="text-center bg-custom-blue bg-opacity-80 text-white rounded shadow-lg border-custom-green px-5 py-5">
+                <div className="inline-flex"><img className='w-7' src={image} alt={name} />
+                <h2 className="text-lg font-extrabold my-auto"> &nbsp;&nbsp;{name} <span className="text-transform: uppercase">&nbsp;&nbsp;{symbol}</span></h2>
             </div>
-            <div className="text-center text-white rounded shadow-md shadow-custom-green py-5">
-                <h2 className="text-2xl font-bold">2</h2>
-            </div>
-            <div className="text-center text-white rounded shadow-md shadow-custom-green py-5">
-                <h2 className="text-2xl font-bold">3</h2>
-            </div>
-            <div className="text-center text-white rounded shadow-md shadow-custom-green py-5">
-                <h2 className="text-2xl font-bold">4</h2>
+            <p className="text-xs mt-3 text-zinc-500">{last_updated}</p>
+            <h2 className="text-2xl mb-4 mt-4 text-gray-100">$ {current_price}</h2>
+            <p className="text-sm">High(24h): ${high_24h}</p>
+            <p className="mt-2 text-sm">Low(24h): ${low_24h}</p>
             </div>
         </div>
-    </div>
   );
 };
 
