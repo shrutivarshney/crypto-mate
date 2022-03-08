@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -113,9 +114,9 @@ const Navbar = () => {
                   </div>
                 )}
               </div>
-              <a href="/" className="items-center justify-center w-full px-3 font-bold text-white rounded lg:inline-flex lg:w-auto hover:text-custom-green">
+              <Link to="/GraphPage" className="items-center justify-center w-full px-3 font-bold text-white rounded lg:inline-flex lg:w-auto hover:text-custom-green">
                 Learn
-              </a>
+              </Link>
             </div>
             <div className="lg:ml-auto flex flex-col items-start w-full lg:inline-flex lg:flex-row lg:w-auto lg:items-center lg:h-auto">
                 <a href="/Login" className="items-center justify-center w-full px-3 py-2 font-bold text-custom-green rounded lg:inline-flex lg:w-auto hover:text-white">
