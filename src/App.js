@@ -1,6 +1,6 @@
 import React from "react"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import "./App.scss"
+import GraphPage from "./Pages/GraphPage"
 import Homepage from "./Pages/homepage"
 import Login from "./Pages/Login"
 import Register from "./Pages/Register"
@@ -13,6 +13,7 @@ function App() {
 					<Route path="/" element={<Homepage />} />
 					<Route path="/Login" element={<Login />} />
 					<Route path="/Register" element={<Register />} />
+					<Route path="/GraphPage" element={<GraphPage/>} />
 
 				</Routes>
 			</div>

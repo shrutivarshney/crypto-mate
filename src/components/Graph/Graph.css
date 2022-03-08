@@ -1,0 +1,110 @@
+a.cryptocompare-logo {
+  display: none;
+}
+
+
+/* 
+.tabcontent {
+  display: none !important;
+}
+.cTypeTabActive {
+   background-color: rgba(216,216,216, 0.8) !important;
+}
+.tabperiods {
+    font-family: 'Raleway', sans-serif;
+    border-radius: 7px;
+    padding: 2px 1px;
+  background-color: rgba(0,0,0, 0.03);
+}
+.tabperiods:hover {
+   background-color: rgb(231, 240, 249);
+}
+.tabperiods_active{
+  background-color: rgba(10,115,167, 0.1); 
+}
+
+.tablinks {
+  border-radius: 7px;
+    border-width: 1px;
+    padding: 5px 10px;
+    border-style: solid;
+    background-color: #ffffff;
+    border-color: rgb(255, 255, 255)!important;
+}
+.tablinks:hover {
+    background-color: #f2f2f2;
+    border-color: rgba(127,211,179, 0.8);
+}
+.tablinks.active {
+    border-color: rgba(255, 255, 255, 0.01) !important;
+    background-color: #e6e6e6 !important;
+}
+.amcharts-graph-line
+     {
+      fill: rgba(255, 255, 255, 0.9);
+}
+.cccCustomRadioContainer {
+  display: none;
+}
+.tabcontent {
+    display:none;
+}
+
+.ccc-widget, .ccc-chart-v3 {
+  border: 0px solid !important
+}
+tspan, textPath {
+    font-size: 0.8rem;
+}
+rect.amcharts-cursor-div {
+  background-color: #000000;
+}
+
+.chartTypeTabLinks:hover {
+   background-color: #e5e5e5 !important;
+   color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.chartTypeTabLinks {
+    padding-top: 1px;
+  padding-bottom: 1px;
+}
+.amcharts-graph-fill {
+    fill: rgb(139, 146, 167) !important;
+    fill-opacity: 0.2;
+}
+.amcharts-graph-stroke {
+    fill-opacity: 0.8;
+    stroke-width: 2;
+    stroke-opacity: 0.8;
+    stroke: rgb(125, 149, 182);
+}
+.amcharts-category-axis {
+  fill: rgba(0,0,0, 0.8) !important;
+}
+
+.amcharts-cursor-fill {
+ fill: rgba(10,115,167, 0.8);
+  stroke:  rgb(4, 0, 0) !important;
+  display: none !important;
+}
+
+.amcharts-plot-area {
+      fill: rgb(25, 225, 225) !important;
+}
+
+
+.amcharts-legend-marker {
+  fill: rgba(10,115,167, 0.3) !important;
+  stroke: rgba(10,115,167, 0.6) !important;
+}
+
+.amcharts-balloon-div {
+  fill:  rgba(10,115,167, 0.9) !important;
+  position:absolute !important;
+  border:1px !important;
+}
+
+#loaderccc {
+   display: none !important; 
+} */
