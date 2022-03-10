@@ -10,20 +10,12 @@ const Navbar = () => {
 
   const [showOptions, setShowOptions] = useState(false);
 
-  const showDrop = () => {
-    setShowOptions(!showOptions);
-  };
+  
 
   const [showTrade, setShowTrade] = useState(false);
 
   const showTradeDrop = () => {
     setShowTrade(!showTrade);
-  };
-
-  const [showDownArrow, setShowDownArrow] = useState(false);
-
-  const showDownArrowDrop = () => {
-    setShowDownArrow(!showDownArrow);
   };
 
   return (
@@ -119,10 +111,10 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="lg:ml-auto flex flex-col items-start w-full lg:inline-flex lg:flex-row lg:w-auto lg:items-center lg:h-auto">
-                <a href="/Login" className="items-center justify-center w-full px-3 py-2 font-bold text-custom-green rounded lg:inline-flex lg:w-auto hover:text-white">
+                <a href="/Videos" className="items-center justify-center w-full px-3 py-2 font-bold text-custom-green rounded lg:inline-flex lg:w-auto hover:text-white">
                   Login
                 </a>
-                <a href="/Register" className="items-center justify-center w-full px-3 py-2 font-bold text-custom-blue bg-custom-green rounded lg:inline-flex lg:w-auto hover:bg-custom-hover-green">
+                <a href="/" className="items-center justify-center w-full px-3 py-2 font-bold text-custom-blue bg-custom-green rounded lg:inline-flex lg:w-auto hover:bg-custom-hover-green">
                 Register
               </a>
             </div>

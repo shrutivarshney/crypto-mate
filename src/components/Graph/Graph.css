@@ -2,23 +2,25 @@ a.cryptocompare-logo {
   display: none;
 }
 
+.cTypeTabActive {
+  background-color: #42db7c !important;
+  color: #061122 !important;
+}
+
+.chartTypeTabLinks:hover {
+  background-color: rgb(206,206,206) !important;
+  color: #061122 !important;
+}
+
 
 /* 
-.tabcontent {
-  display: none !important;
-}
-.cTypeTabActive {
-   background-color: rgba(216,216,216, 0.8) !important;
-}
 .tabperiods {
     font-family: 'Raleway', sans-serif;
     border-radius: 7px;
     padding: 2px 1px;
   background-color: rgba(0,0,0, 0.03);
 }
-.tabperiods:hover {
-   background-color: rgb(231, 240, 249);
-}
+
 .tabperiods_active{
   background-color: rgba(10,115,167, 0.1); 
 }
@@ -60,10 +62,6 @@ rect.amcharts-cursor-div {
   background-color: #000000;
 }
 
-.chartTypeTabLinks:hover {
-   background-color: #e5e5e5 !important;
-   color: rgba(0, 0, 0, 0.6) !important;
-}
 
 .chartTypeTabLinks {
     padding-top: 1px;
