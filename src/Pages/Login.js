@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Register from "./Register";
 
 const Login = () => {
   const [user, setUser] = useState({
@@ -21,19 +20,19 @@ const Login = () => {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen ">
-      <div className="flex flex-col py-8 rounded-lg shadow h-96 bg-neutral-300 dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10">
-        <h1 className="self-center text-5xl font-extrabold text-gray-800 sm:text-2xl dark:text-white">
+    <div className="flex items-center justify-center min-h-screen">
+      <div className="flex flex-col py-5 my-4 bg-opacity-50 rounded-lg shadow bg-custom-blue sm:px-6 md:px-8 lg:px-10">
+        <h1 className="text-4xl font-bold text-center text-custom-green sm:text-3xl">
           Log In
         </h1>
-        <div className="p-6 mt-8">
+        <div className="p-6">
           <form>
             <div className="flex flex-col gap-4 mb-2">
-              <div className="flex flex-col gap-4 mb-2">
-                <div className="relative ">
+              <div className="flex flex-col gap-4 mb-1">
+                <div className="relative">
                   <input
                     type="text"
-                    className="flex-1 w-full px-4 py-3 text-base text-gray-700 placeholder-gray-400 bg-white border border-transparent border-gray-300 rounded-lg shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                    className="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-transparent border-gray-300 rounded-lg shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-custom-green focus:border-transparent"
                     name="email"
                     value={user.email}
                     onChange={handleChange}
@@ -45,7 +44,7 @@ const Login = () => {
                 <div className="relative ">
                   <input
                     type="password"
-                    className="flex-1 w-full px-4 py-3 text-base text-gray-700 placeholder-gray-400 bg-white border border-transparent border-gray-300 rounded-lg shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                    className="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-transparent border-gray-300 rounded-lg shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-custom-green focus:border-transparent"
                     name="password"
                     value={user.password}
                     onChange={handleChange}
@@ -53,10 +52,10 @@ const Login = () => {
                   />
                 </div>
               </div>
-              <div className="flex w-full my-4">
+              <div className="flex w-full mb-3">
                 <input
                   type="submit"
-                  className="w-full px-4 py-3 text-center text-white transition duration-200 ease-in bg-purple-600 rounded-lg shadow-md cursor-pointer hover:bg-purple-700 focus:ring-purple-500 focus:ring-offset-purple-200 focus:outline-none focus:ring-2 focus:ring-offset-2 hover:text-slate-400 "
+                  className="w-full px-4 py-2 text-center text-white transition duration-200 ease-in rounded-lg shadow-md cursor-pointer bg-custom-green hover:bg-transparent hover:ring-custom-green focus:outline-none hover:ring-2 hover:text-custom-green"
                   id="create-account-email"
                   value="Submit"
                   onClick={(e) => submitForm(e)}
@@ -64,13 +63,13 @@ const Login = () => {
               </div>
             </div>
           </form>
-          <span className="justify-center pb-5 text-sm text-center text-gray-500 flex-items-center dark:text-gray-400">
-            Don't have an account ?
+          <span className="justify-center pb-5 text-sm text-center text-white flex-items-center">
+            Don't have an account ?&nbsp;
             <Link
               to="/Register"
-              className="px-1 text-sm underline text-custom-green hover:text-custom-green"
+              className="px-1 text-sm text-custom-green hover:text-custom-hover-green"
             >
-              Register here
+              Register
             </Link>
           </span>
         </div>

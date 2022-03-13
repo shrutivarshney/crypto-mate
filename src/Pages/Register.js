@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import Login from "./Login";
 
 const Register = () => {
   const [user, setUser] = useState({
@@ -32,80 +31,82 @@ const Register = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen">
-      <div className="flex flex-col max-w-md px-4 py-8 bg-white rounded-lg shadow dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10">
-        <div className="self-center mb-2 text-xl font-light text-gray-800 sm:text-2xl dark:text-white">
+    <div className="flex items-center justify-center min-h-screen">
+      <div className="flex flex-col max-w-md px-4 py-5 my-4 bg-opacity-50 rounded-lg shadow bg-custom-blue sm:px-6 md:px-8 lg:px-10">
+        <div className="text-2xl font-bold text-center text-custom-green sm:text-3xl">
           Create a new account
         </div>
-        <span className="justify-center text-sm text-center text-gray-500 flex-items-center dark:text-gray-400">
-          Already have an account ?
-          <Link
-            to="/Login"
-            className="text-sm text-blue-500 underline hover:text-blue-700"
-          >
-            Sign in
-          </Link>
-        </span>
-        <div className="p-6 mt-8">
+        <div className="p-6">
           <form>
-            <div className="flex flex-col mb-2">
-              <div className=" relative ">
-                <input
-                  type="text"
-                  className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                  name="fullName"
-                  value={user.fullName}
-                  onChange={handleChange}
-                  placeholder="FullName"
-                />
-              </div>
-            </div>
             <div className="flex flex-col gap-4 mb-2">
-              <div className=" relative ">
-                <input
-                  type="text"
-                  className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                  name="username"
-                  value={user.username}
-                  onChange={handleChange}
-                  placeholder="Username"
-                />
-              </div>
-              <div className="flex flex-col gap-4 mb-2">
-                <div className=" relative ">
+              <div className="flex flex-col gap-4 mb-1">
+                <div className="relative">
                   <input
                     type="text"
-                    className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                    name="email"
-                    value={user.email}
+                    className="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-transparent border-gray-300 rounded-lg shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-custom-green focus:border-transparent"
+                    name="fullName"
+                    value={user.fullName}
                     onChange={handleChange}
-                    placeholder="Email"
+                    placeholder="Full Name"
                   />
                 </div>
               </div>
-              <div className="flex flex-col mb-2">
-                <div className=" relative ">
+              <div className="flex flex-col gap-4 mb-1">
+                <div className="relative">
                   <input
-                    type="password"
-                    className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                    name="password"
-                    value={user.password}
+                    type="text"
+                    className="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-transparent border-gray-300 rounded-lg shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-custom-green focus:border-transparent"
+                    name="username"
+                    value={user.username}
                     onChange={handleChange}
-                    placeholder="password"
+                    placeholder="Username"
                   />
                 </div>
-              </div>
-              <div className="flex w-full my-4">
-                <input
-                  type="submit"
-                  className="py-2 px-4  bg-purple-600 hover:bg-purple-700 focus:ring-purple-500 focus:ring-offset-purple-200 text-white w-full transition ease-in duration-200 text-center text-base shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
-                  id="create-account-email"
-                  value="Submit"
-                  onClick={(e) => egister(e)}
-                />
+                <div className="flex flex-col gap-4 mb-1">
+                  <div className="relative">
+                    <input
+                      type="text"
+                      className="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-transparent border-gray-300 rounded-lg shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-custom-green focus:border-transparent"
+                      name="email"
+                      value={user.email}
+                      onChange={handleChange}
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+                <div className="flex flex-col mb-2">
+                  <div className="relative ">
+                    <input
+                      type="password"
+                      className="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-transparent border-gray-300 rounded-lg shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-custom-green focus:border-transparent"
+                      name="password"
+                      value={user.password}
+                      onChange={handleChange}
+                      placeholder="Password"
+                    />
+                  </div>
+                </div>
+                <div className="flex w-full mb-3">
+                  <input
+                    type="submit"
+                    className="w-full px-4 py-2 text-center text-white transition duration-200 ease-in rounded-lg shadow-md cursor-pointer bg-custom-green hover:bg-transparent hover:ring-custom-green focus:outline-none hover:ring-2 hover:text-custom-green"
+                    id="create-account-email"
+                    value="Submit"
+                    onClick={(e) => egister(e)}
+                  />
+                </div>
               </div>
             </div>
           </form>
+          <span className="justify-center text-sm text-center text-white flex-items-center dark:text-gray-400">
+            Already have an account ?&nbsp;
+            <Link
+              to="/Login"
+              className="px-1 text-sm text-custom-green hover:text-custom-hover-green"
+            >
+              Login
+            </Link>
+          </span>
         </div>
       </div>
     </div>
