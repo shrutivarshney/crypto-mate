@@ -57,7 +57,7 @@ const Login = () => {
                   type="submit"
                   className="w-full px-4 py-2 text-center text-white transition duration-200 ease-in rounded-lg shadow-md cursor-pointer bg-custom-green hover:bg-transparent hover:ring-custom-green focus:outline-none hover:ring-2 hover:text-custom-green"
                   id="create-account-email"
-                  value="Submit"
+                  value="Login"
                   onClick={(e) => submitForm(e)}
                 />
               </div>
