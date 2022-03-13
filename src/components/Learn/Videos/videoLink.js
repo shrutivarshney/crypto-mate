@@ -14,7 +14,7 @@ const VideoLink = () => {
                     {link: "https://www.youtube-nocookie.com/embed/vj8W-gbrKaU", title: "The Impact of Bitcoin on The Global Economy"},
                     {link: "https://www.youtube-nocookie.com/embed/9uQ62FpbbXY", title: "Crypto NFT-A New World of Fine Art"}]
   return (
-    <div>
+    <div>    
       <div className='flex justify-center mx-14'>
         <div className="grid grid-cols-1 py-5 gap-y-14 gap-x-20 sm:grid-cols-2 md:grid-cols-3">
           {videos.map((vid)=> <div>

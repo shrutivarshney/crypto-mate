@@ -33,9 +33,16 @@ const Register = () => {
   return (
     <div className="flex items-center justify-center min-h-screen">
       <div className="flex flex-col max-w-md px-4 py-5 my-4 bg-opacity-50 rounded-lg shadow bg-custom-blue sm:px-6 md:px-8 lg:px-10">
-        <div className="text-2xl font-bold text-center text-custom-green sm:text-3xl">
-          Create a new account
-        </div>
+      <div className="inline-flex text-4xl font-bold text-center text-custom-green sm:text-3xl">
+        <Link to="/" className="flex">
+          <img
+            src="/logo.png"
+            alt="Crypto Mate Logo"
+            className="w-20 h-20 shadow-md"
+          />
+        </Link>
+        <span className="self-center mx-auto">Register</span>
+      </div>
         <div className="p-6">
           <form>
             <div className="flex flex-col gap-4 mb-2">

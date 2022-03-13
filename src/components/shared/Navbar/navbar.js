@@ -12,13 +12,13 @@ const Navbar = () => {
     <div className="py-1 navbar">
       <nav className="px-2 text-sm border-gray-200 bg-custom-blue">
         <div className="flex flex-wrap items-center justify-between py-1 mx-5 sm:mx-14">
-          <a href="/" className="flex">
+          <Link to="/" className="flex">
             <img
               src="/logo.png"
               alt="Crypto Mate Logo"
               className="w-20 h-20 shadow-md"
             />
-          </a>
+          </Link>
           <button
             className="inline-flex float-right p-3 ml-auto text-white rounded outline-none hover:text-custom-green lg:hidden"
             onClick={handleClick}
@@ -82,9 +82,9 @@ const Navbar = () => {
                 <div className="relative group">
                   <button
                     href="/"
-                    className="items-center justify-center w-full px-4 font-bold text-white rounded lg:inline-flex lg:w-auto"
+                    className="items-center justify-center w-full px-4 font-bold text-white rounded lg:inline-flex lg:w-auto hover:text-custom-green"
                   >
-                    <span className="hover:text-custom-green">Trade&nbsp;</span>
+                    <span>Trade&nbsp;</span>
                     <i className="fas fa-caret-down"></i>
                   </button>
                   <div className="absolute z-10 hidden w-48 py-2 rounded-md shadow-md left-4 bg-custom-blue shadow-custom-green group-hover:block">
@@ -113,9 +113,9 @@ const Navbar = () => {
                 <div className="relative group">
                   <button
                     href="/"
-                    className="items-center justify-center w-full px-4 py-2 font-bold text-white rounded lg:inline-flex lg:w-auto"
+                    className="items-center justify-center w-full px-4 py-2 font-bold text-white rounded lg:inline-flex lg:w-auto hover:text-custom-green"
                   >
-                    <span className="hover:text-custom-green">Learn&nbsp;</span>
+                    <span>Learn&nbsp;</span>
                     <i className="fas fa-caret-down"></i>
                   </button>
                   <div className="absolute z-10 hidden w-48 py-2 rounded-md shadow-md left-4 bg-custom-blue shadow-custom-green group-hover:block">

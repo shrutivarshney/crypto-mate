@@ -22,9 +22,16 @@ const Login = () => {
   return (
     <div className="flex items-center justify-center min-h-screen">
       <div className="flex flex-col py-5 my-4 bg-opacity-50 rounded-lg shadow bg-custom-blue sm:px-6 md:px-8 lg:px-10">
-        <h1 className="text-4xl font-bold text-center text-custom-green sm:text-3xl">
-          Log In
-        </h1>
+        <div className="inline-flex text-4xl font-bold text-center text-custom-green sm:text-3xl">
+          <Link to="/" className="flex">
+            <img
+              src="/logo.png"
+              alt="Crypto Mate Logo"
+              className="w-20 h-20 shadow-md"
+            />
+          </Link>
+          <span className="self-center mx-auto">Log In</span>
+        </div>
         <div className="p-6">
           <form>
             <div className="flex flex-col gap-4 mb-2">
