@@ -1,5 +1,3 @@
-import react from "react";
-import Carousel from "react-elastic-carousel";
 const Banner = () => {
     return (
         <div className="py-4 bg-opacity-60 bg-custom-blue">

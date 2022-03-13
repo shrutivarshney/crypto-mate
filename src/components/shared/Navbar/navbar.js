@@ -136,18 +136,18 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="flex flex-col items-start w-full lg:ml-auto lg:inline-flex lg:flex-row lg:w-auto lg:items-center lg:h-auto">
-              <a
-                href="/"
+              <Link
+                to="/Login"
                 className="items-center justify-center w-auto px-4 py-2 mx-2 mb-3 font-bold rounded hover:text-custom-blue hover:bg-custom-green lg:inline-flex bg-custom-blue text-custom-green md:mr-1"
               >
                 Login
-              </a>
-              <a
-                href="/"
+              </Link>
+              <Link
+                to="/Register"
                 className="items-center justify-center w-auto px-4 py-2 mx-2 mb-3 font-bold rounded text-custom-blue bg-custom-green lg:inline-flex hover:bg-custom-blue hover:text-custom-green hover:ring-2 hover:ring-custom-green"
               >
                 Register
-              </a>
+              </Link>
             </div>
           </div>
         </div>
