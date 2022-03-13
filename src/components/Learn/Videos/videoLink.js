@@ -15,14 +15,14 @@ const VideoLink = () => {
                     {link: "https://www.youtube-nocookie.com/embed/9uQ62FpbbXY", title: "Crypto NFT-A New World of Fine Art"}]
   return (
     <div>
-      <div className='flex justify-center'>
-      <div className="grid py-5 grid-cols-1 md:grid-cols-3 md:gap-12">
-        {videos.map((vid)=> <div>
-          <iframe className='w-72 my-5 h-40 md:w-48 md:my-0 lg:w-96 lg:h-60' src={vid.link} title={vid.title} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>   
-        )}
-    </div>
-    </div>
+      <div className='flex justify-center mx-14'>
+        <div className="grid grid-cols-1 py-5 gap-y-14 gap-x-20 sm:grid-cols-2 md:grid-cols-3">
+          {videos.map((vid)=> <div>
+            <iframe className='w-full h-40 lg:h-60' src={vid.link} title={vid.title} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>   
+          )}
+        </div>
+      </div>
     </div>
   )
 }

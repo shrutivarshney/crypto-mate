@@ -7,30 +7,20 @@ const Navbar = () => {
   const handleClick = () => {
     setActive(!active);
   };
-
-  const [showOptions, setShowOptions] = useState(false);
-
   
-
-  const [showTrade, setShowTrade] = useState(false);
-
-  const showTradeDrop = () => {
-    setShowTrade(!showTrade);
-  };
-
   return (
-    <div className="navbar py-1">
-      <nav className="bg-custom-blue border-gray-200 px-2 text-sm">
-        <div className="container mx-auto py-1 flex flex-wrap items-center justify-between">
+    <div className="py-1 navbar">
+      <nav className="px-2 text-sm border-gray-200 bg-custom-blue">
+        <div className="flex flex-wrap items-center justify-between py-1 mx-5 sm:mx-14">
           <a href="/" className="flex">
             <img
               src="/logo.png"
               alt="Crypto Mate Logo"
-              className="shadow-md h-20 w-20"
+              className="w-20 h-20 shadow-md"
             />
           </a>
           <button
-            className="inline-flex float-right p-3 ml-auto  text-white rounded outline-none hover:bg-custom-green lg:hidden hover:text-white"
+            className="inline-flex float-right p-3 ml-auto text-white rounded outline-none hover:text-custom-green lg:hidden"
             onClick={handleClick}
           >
             <svg
@@ -53,68 +43,109 @@ const Navbar = () => {
               active ? "" : "hidden"
             }   w-full lg:inline-flex lg:flex-grow lg:w-auto mt-4`}
           >
-            <div className="flex flex-col items-start w-full lg:ml-16 lg:inline-flex lg:flex-row lg:w-auto lg:items-center lg:h-auto">
-              <div className="relative">
-                <button
-                  onMouseEnter={() => setShowOptions(true)}
-                  onMouseLeave={() => setShowOptions(false)}
-                  className="items-center justify-center w-full px-3 py-2 font-bold text-white rounded lg:inline-flex lg:w-auto"
-                >
-                  <span className="hover:text-custom-green">
-                    Buy Crypto&nbsp;
-                  </span>
-                  <i className="fas fa-caret-down"></i>{" "}
-                </button>
-                {showOptions && (
-                  <div className="absolute left-4 bg-custom-blue rounded-md py-2 w-56 shadow-md shadow-custom-green">
-                    <a href="/" className="block text-white px-4 py-2 font-bold hover:bg-custom-green hover:text-custom-blue">
+            <ul className="flex flex-col items-start w-full lg:ml-16 lg:inline-flex lg:flex-row lg:w-auto lg:items-center lg:h-auto">
+              <li className="py-1">
+                <div className="relative group">
+                  <button className="items-center justify-center w-full px-4 py-2 font-bold text-white rounded hover:text-custom-green lg:inline-flex lg:w-auto">
+                    <span>
+                      Buy Crypto&nbsp;
+                    </span>
+                    <i className="fas fa-caret-down"></i>{" "}
+                  </button>
+                  <div className="absolute z-10 hidden w-48 py-2 rounded-md shadow-md left-4 bg-custom-blue shadow-custom-green group-hover:block">
+                    <Link
+                      to="/"
+                      className="block px-4 py-2 font-bold text-white hover:bg-custom-green hover:text-custom-blue"
+                    >
                       a
-                    </a>
-                    <a href="/" className="block text-white px-4 py-2 font-bold hover:bg-custom-green hover:text-custom-blue">
+                    </Link>
+                    <Link
+                      to="/"
+                      className="block px-4 py-2 font-bold text-white hover:bg-custom-green hover:text-custom-blue"
+                    >
                       a
-                    </a>
-                    <a href="/" className="block text-white px-4 py-2 font-bold hover:bg-custom-green hover:text-custom-blue">
-                      a
-                    </a>
+                    </Link>
                   </div>
-                )}
-              </div>
-              <a href="/" className="items-center justify-center w-full px-3 font-bold text-white rounded lg:inline-flex lg:w-auto hover:text-custom-green">
-                Markets
+                </div>
+              </li>
+              <li className="py-1">
+                <div className="relative pb-2 lg:pb-0">
+                  <button
+                    href="/"
+                    className="items-center justify-center w-full px-4 font-bold text-white rounded lg:inline-flex lg:w-auto"
+                  >
+                    Markets
+                  </button>
+                </div>
+              </li>
+              <li className="py-1">
+                <div className="relative group">
+                  <button
+                    href="/"
+                    className="items-center justify-center w-full px-4 font-bold text-white rounded lg:inline-flex lg:w-auto"
+                  >
+                    <span className="hover:text-custom-green">Trade&nbsp;</span>
+                    <i className="fas fa-caret-down"></i>
+                  </button>
+                  <div className="absolute z-10 hidden w-48 py-2 rounded-md shadow-md left-4 bg-custom-blue shadow-custom-green group-hover:block">
+                    <Link
+                      to="/"
+                      className="block px-4 py-2 font-bold text-white hover:bg-custom-green hover:text-custom-blue"
+                    >
+                      a
+                    </Link>
+                    <Link
+                      to="/"
+                      className="block px-4 py-2 font-bold text-white hover:bg-custom-green hover:text-custom-blue"
+                    >
+                      a
+                    </Link>
+                    <Link
+                      to="/"
+                      className="block px-4 py-2 font-bold text-white hover:bg-custom-green hover:text-custom-blue"
+                    >
+                      a
+                    </Link>
+                  </div>
+                </div>
+              </li>
+              <li className="py-1">
+                <div className="relative group">
+                  <button
+                    href="/"
+                    className="items-center justify-center w-full px-4 py-2 font-bold text-white rounded lg:inline-flex lg:w-auto"
+                  >
+                    <span className="hover:text-custom-green">Learn&nbsp;</span>
+                    <i className="fas fa-caret-down"></i>
+                  </button>
+                  <div className="absolute z-10 hidden w-48 py-2 rounded-md shadow-md left-4 bg-custom-blue shadow-custom-green group-hover:block">
+                    <Link
+                      to="/"
+                      className="block px-4 py-2 font-bold text-white hover:bg-custom-green hover:text-custom-blue"
+                    >
+                      Blogs
+                    </Link>
+                    <Link
+                      to="/Videos"
+                      className="block px-4 py-2 font-bold text-white hover:bg-custom-green hover:text-custom-blue"
+                    >
+                      Videos
+                    </Link>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div className="flex flex-col items-start w-full lg:ml-auto lg:inline-flex lg:flex-row lg:w-auto lg:items-center lg:h-auto">
+              <a
+                href="/"
+                className="items-center justify-center w-auto px-4 py-2 mx-2 mb-3 font-bold rounded hover:text-custom-blue hover:bg-custom-green lg:inline-flex bg-custom-blue text-custom-green md:mr-1"
+              >
+                Login
               </a>
-              <div className="relative">
-                <button
-                  onMouseEnter={() => showTradeDrop(true)}
-                  onMouseLeave={() => showTradeDrop(false)}
-                  href="/"
-                  className="items-center justify-center w-full px-3 font-bold text-white rounded lg:inline-flex lg:w-auto"
-                >
-                  <span className="hover:text-custom-green">Trade&nbsp;</span>
-                  <i className="fas fa-caret-down"></i>
-                </button>
-                {showTrade && (
-                  <div className="absolute left-4 bg-custom-blue rounded-md py-2 w-56 shadow-md shadow-custom-green">
-                    <a href="/" className="block text-white px-4 py-2 font-bold hover:bg-custom-green hover:text-custom-blue">
-                      a
-                    </a>
-                    <a href="/" className="block text-white px-4 py-2 font-bold hover:bg-custom-green hover:text-custom-blue">
-                      a
-                    </a>
-                    <a href="/" className="block text-white px-4 py-2 font-bold hover:bg-custom-green hover:text-custom-blue">
-                      a
-                    </a>
-                  </div>
-                )}
-              </div>
-              <Link to="/GraphPage" className="items-center justify-center w-full px-3 font-bold text-white rounded lg:inline-flex lg:w-auto hover:text-custom-green">
-                Learn
-              </Link>
-            </div>
-            <div className="lg:ml-auto flex flex-col items-start w-full lg:inline-flex lg:flex-row lg:w-auto lg:items-center lg:h-auto">
-                <a href="/Videos" className="items-center justify-center w-full px-3 py-2 font-bold text-custom-green rounded lg:inline-flex lg:w-auto hover:text-white">
-                  Login
-                </a>
-                <a href="/" className="items-center justify-center w-full px-3 py-2 font-bold text-custom-blue bg-custom-green rounded lg:inline-flex lg:w-auto hover:bg-custom-hover-green">
+              <a
+                href="/"
+                className="items-center justify-center w-auto px-4 py-2 mx-2 mb-3 font-bold rounded text-custom-blue bg-custom-green lg:inline-flex hover:bg-custom-blue hover:text-custom-green hover:ring-2 hover:ring-custom-green"
+              >
                 Register
               </a>
             </div>

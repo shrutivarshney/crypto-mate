@@ -38,7 +38,7 @@ const Api = () => {
 
     return (
         <section>
-            <div className="sm:px-0 px-14 py-6">
+            <div className="py-6 sm:px-0 px-14">
             <Carousel breakPoints={breakPoint} 
                         showArrows={false} 
                         enableAutoPlay={true}
@@ -53,8 +53,8 @@ const Api = () => {
                     </Carousel>
             </div>
             <div>
-                <h1 className="text-center text-xl text-white font-bold mb-6">Today's Featured Exchange</h1>
-                <div className="grid gap-4 container mx-auto px-10 sm:px-0 py-4 mb-4">
+                <h1 className="mb-6 text-xl font-bold text-center text-white">Today's Featured Exchange</h1>
+                <div className="container grid gap-4 px-10 py-4 mx-auto mb-4 sm:px-0">
                     <Carousel breakPoints={breakPoints} 
                         showArrows={false} 
                         enableAutoPlay={true}
@@ -74,7 +74,7 @@ const Api = () => {
                     </Carousel>
                 </div>
             </div>
-            <div className=" text-custom-blue font-bold text-center text-2xl bg-custom-green opacity-50 py-4">Trade Popular Coins</div>
+            <div className="py-4 text-2xl font-bold text-center opacity-50 text-custom-blue bg-custom-green">Trade Popular Coins</div>
                         
                         {coins.map((coin) => {
                             return (<Chart
