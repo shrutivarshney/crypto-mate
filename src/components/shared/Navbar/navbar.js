@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Login from "../../../Pages/Login";
+import Register from "../../../Pages/Register";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -109,14 +111,17 @@ const Navbar = () => {
               <Link to="/GraphPage" className="items-center justify-center w-full px-3 font-bold text-white rounded lg:inline-flex lg:w-auto hover:text-custom-green">
                 Learn
               </Link>
+              <Link to="/Videos" className="items-center justify-center w-full px-3 font-bold text-white rounded lg:inline-flex lg:w-auto hover:text-custom-green">
+                Videos
+              </Link>
             </div>
             <div className="lg:ml-auto flex flex-col items-start w-full lg:inline-flex lg:flex-row lg:w-auto lg:items-center lg:h-auto">
-                <a href="/Videos" className="items-center justify-center w-full px-3 py-2 font-bold text-custom-green rounded lg:inline-flex lg:w-auto hover:text-white">
+                <Link to="/Login" className="items-center justify-center w-full px-3 py-2 font-bold text-custom-green rounded lg:inline-flex lg:w-auto hover:text-white">
                   Login
-                </a>
-                <a href="/" className="items-center justify-center w-full px-3 py-2 font-bold text-custom-blue bg-custom-green rounded lg:inline-flex lg:w-auto hover:bg-custom-hover-green">
+                </Link>
+                <Link to="/Register" className="items-center justify-center w-full px-3 py-2 font-bold text-custom-blue bg-custom-green rounded lg:inline-flex lg:w-auto hover:bg-custom-hover-green">
                 Register
-              </a>
+              </Link>
             </div>
           </div>
         </div>
