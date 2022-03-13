@@ -120,7 +120,7 @@ const Navbar = () => {
                   </button>
                   <div className="absolute z-10 hidden w-48 py-2 rounded-md shadow-md left-4 bg-custom-blue shadow-custom-green group-hover:block">
                     <Link
-                      to="/"
+                      to="/Blogs"
                       className="block px-4 py-2 font-bold text-white hover:bg-custom-green hover:text-custom-blue"
                     >
                       Blogs
