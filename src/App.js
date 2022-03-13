@@ -2,8 +2,7 @@ import React from "react"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import GraphPage from "./Pages/GraphPage"
 import Homepage from "./Pages/homepage"
-import Login from "./Pages/Login"
-import Register from "./Pages/Register"
+import Videos from "./Pages/Videos"
 
 function App() {
 	return (
@@ -11,10 +10,8 @@ function App() {
 			<div className="App bg-[url('../public/bg.png')] bg-repeat font-poppins">
 				<Routes>
 					<Route path="/" element={<Homepage />} />
-					<Route path="/Login" element={<Login />} />
-					<Route path="/Register" element={<Register />} />
 					<Route path="/GraphPage" element={<GraphPage/>} />
-
+					<Route path="/Videos" element={<Videos/>} />
 				</Routes>
 			</div>
 		</BrowserRouter>

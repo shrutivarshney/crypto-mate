@@ -7,7 +7,7 @@ const Coins = ({ name, image }) => {
         <div className="container">
             <div className="text-center text-white px-5 py-5">
                 <div className="inline-flex">
-                    <a target="_blank" rel="noreferrer" href={`https://coinmarketcap.com/currencies/${name}`}><img className="rounded-full w-10" src={image} alt={name} /></a>
+                    <a target="_parent" rel="noreferrer" href="/GraphPage"><img className="rounded-full w-10" src={image} alt={name} /></a>
                 </div>
             </div>
         </div>
