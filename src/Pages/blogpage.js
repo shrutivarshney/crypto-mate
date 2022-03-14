@@ -1,10 +1,14 @@
 import React from 'react'
 import Blog from "../components/blog/blog"
+import Footer from '../components/shared/Footer/footer';
+import Navbar from '../components/shared/Navbar/navbar';
 
 function blogpage() {
   return (
     <div >
-     <Blog/>
+      <Navbar />
+      <Blog/>
+      <Footer />
     </div>
   );
 };

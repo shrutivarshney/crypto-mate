@@ -1,50 +1,28 @@
-import React from 'react'
-import blogdatas from './blogdata';
-import Layout from './layout';
- import "./layout.css"
-import Blogbanner from './blogbanner';
-import Footer from '../shared/Footer/footer';
-import Navbar from '../shared/Navbar/navbar';
+import React from "react";
+import blogdatas from "./blogdata";
+import Layout from "./layout";
+import "./layout.css";
+import Blogbanner from "./blogbanner";
 
-function add(blogdata){
-    return(
-      <Layout
+function add(blogdata) {
+  return (
+    <Layout
       key={blogdata.id}
-      image= {blogdata.imageUrl}
-      title = {blogdata.title}
-      body ={blogdata.body}
-      link ={blogdata.link}
+      image={blogdata.imageUrl}
+      title={blogdata.title}
+      body={blogdata.body}
+      link={blogdata.link}
       date={blogdata.date}
-  
-     />
+    />
+  );
+}
 
-    );
-  }
-
-
-
-
-
-
-
-
-
-  function blog() {
-    return ( 
-      <>
-      <Navbar/>
-
-      <Blogbanner/>
-
-      <br/>  <br/> <br/>  <hr/>
-      <div className='wrapper'>
-     {blogdatas.map(add)} 
-      </div>
-
-
-      <br/>  <br/> <br/>
-      <Footer/>
-     </>
-    );
-  }
-  export default blog ;
+function blog() {
+  return (
+    <>
+      <Blogbanner />
+      <div className="flex flex-wrap justify-center w-full gap-20 px-2 py-10 mt-10 wrapper">{blogdatas.map(add)}</div>
+    </>
+  );
+}
+export default blog;
