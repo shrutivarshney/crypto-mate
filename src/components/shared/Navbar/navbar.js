@@ -9,14 +9,14 @@ const Navbar = () => {
   };
   
   return (
-    <div className="py-1 navbar">
-      <nav className="px-2 text-sm border-gray-200 bg-custom-blue">
+    <div className="md:py-16 py-10 navbar">
+      <nav className="px-2 text-sm border-gray-200 bg-custom-blue fixed top-0 inset-x-0 z-20">
         <div className="flex flex-wrap items-center justify-between py-1 mx-5 sm:mx-14">
           <Link to="/" className="flex">
             <img
               src="/logo.png"
               alt="Crypto Mate Logo"
-              className="w-20 h-20 shadow-md"
+              className="w-16 md:w-20 md:h-20 h-16 pt-2 md:pt-0 shadow-md"
             />
           </Link>
           <button
@@ -50,7 +50,7 @@ const Navbar = () => {
                     <span>
                       Buy Crypto&nbsp;
                     </span>
-                    <i className="fas fa-caret-down"></i>{" "}
+                    <i className="fas fa-caret-down"></i>
                   </button>
                   <div className="absolute z-10 hidden w-48 py-2 rounded-md shadow-md left-4 bg-custom-blue shadow-custom-green group-hover:block">
                     <Link
