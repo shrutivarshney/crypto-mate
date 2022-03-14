@@ -5,7 +5,7 @@ import Homepage from "./Pages/homepage";
 import Videos from "./Pages/Videos";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
-import Blogpage  from "./Pages/blogpage"
+import Blogpage from "./Pages/blogpage";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           <Route path="/Videos" element={<Videos />} />
           <Route path="/Register" element={<Register />} />
           <Route path="/Login" element={<Login />} />
-		  <Route path="/Blogs" element={<Blogpage/>} />
+          <Route path="/Blogs" element={<Blogpage />} />
         </Routes>
       </div>
     </BrowserRouter>
