@@ -1,11 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div className="text-white bg-opacity-50 footer bg-custom-blue">
       <div className="px-10 py-3 mx-5 sm:mx-14 md:px-0">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 py-4 border-b border-custom-green">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 py-4 border-b border-custom-green">
           <div>
             <a href="/">
               <img
@@ -26,25 +25,25 @@ const Footer = () => {
             <ul className="text-sm list-style-type-none">
               <li className="hover:text-custom-green">
                 <a href="/">
-                  <i class="fas fa-chevron-right text-custom-green"></i>&nbsp;
+                  <i className="fas fa-chevron-right text-custom-green"></i>&nbsp;
                   Buy Crypto
                 </a>
               </li>
               <li className="hover:text-custom-green">
                 <a href="/">
-                  <i class="fas fa-chevron-right text-custom-green"></i>&nbsp;
+                  <i className="fas fa-chevron-right text-custom-green"></i>&nbsp;
                   Support Center
                 </a>
               </li>
               <li className="hover:text-custom-green">
                 <a href="/">
-                  <i class="fas fa-chevron-right text-custom-green"></i>&nbsp;
+                  <i className="fas fa-chevron-right text-custom-green"></i>&nbsp;
                   Submit a request
                 </a>
               </li>
               <li className="hover:text-custom-green">
                 <a href="/">
-                  <i class="fas fa-chevron-right text-custom-green"></i>&nbsp;
+                  <i className="fas fa-chevron-right text-custom-green"></i>&nbsp;
                   Trading Rules
                 </a>
               </li>
@@ -55,19 +54,19 @@ const Footer = () => {
             <ul className="text-sm list-style-type-none">
               <li className="hover:text-custom-green">
                 <a href="/">
-                  <i class="fas fa-chevron-right text-custom-green"></i>&nbsp;
+                  <i className="fas fa-chevron-right text-custom-green"></i>&nbsp;
                   Trade
                 </a>
               </li>
               <li className="hover:text-custom-green">
                 <a href="/">
-                  <i class="fas fa-chevron-right text-custom-green"></i>&nbsp;
+                  <i className="fas fa-chevron-right text-custom-green"></i>&nbsp;
                   Referral
                 </a>
               </li>
               <li className="hover:text-custom-green">
                 <a href="/">
-                  <i class="fas fa-chevron-right text-custom-green"></i>&nbsp;
+                  <i className="fas fa-chevron-right text-custom-green"></i>&nbsp;
                   Exchange
                 </a>
               </li>
@@ -78,25 +77,25 @@ const Footer = () => {
             <ul className="text-sm list-style-type-none">
               <li className="hover:text-custom-green">
                 <a href="/">
-                  <i class="fas fa-chevron-right text-custom-green"></i>&nbsp;
+                  <i className="fas fa-chevron-right text-custom-green"></i>&nbsp;
                   Markets
                 </a>
               </li>
               <li className="hover:text-custom-green">
                 <a href="/">
-                  <i class="fas fa-chevron-right text-custom-green"></i>&nbsp;
+                  <i className="fas fa-chevron-right text-custom-green"></i>&nbsp;
                   About
                 </a>
               </li>
               <li className="hover:text-custom-green">
                 <a href="/">
-                  <i class="fas fa-chevron-right text-custom-green"></i>&nbsp;
+                  <i className="fas fa-chevron-right text-custom-green"></i>&nbsp;
                   Latest News
                 </a>
               </li>
               <li className="hover:text-custom-green">
                 <a href="/">
-                  <i class="fas fa-chevron-right text-custom-green"></i>&nbsp;
+                  <i className="fas fa-chevron-right text-custom-green"></i>&nbsp;
                   Charity
                 </a>
               </li>
