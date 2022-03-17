@@ -9,7 +9,7 @@ const Navbar = () => {
   };
   
   return (
-    <div className="md:py-16 py-10 navbar">
+    <div className="md:py-16 md:pb-5 py-10 navbar">
       <nav className="px-2 text-sm border-gray-200 bg-custom-blue fixed top-0 inset-x-0 z-20">
         <div className="flex flex-wrap items-center justify-between py-1 mx-5 sm:mx-14">
           <Link to="/" className="flex">
@@ -135,16 +135,16 @@ const Navbar = () => {
                 </div>
               </li>
             </ul>
-            <div className="flex flex-col items-start w-full lg:ml-auto lg:inline-flex lg:flex-row lg:w-auto lg:items-center lg:h-auto">
+            <div className="flex flex-row items-start w-full lg:ml-auto lg:w-auto lg:h-auto">
               <Link
                 to="/Login"
-                className="items-center justify-center w-auto px-4 py-2 mx-2 mb-3 font-bold rounded hover:text-custom-blue hover:bg-custom-green lg:inline-flex bg-custom-blue text-custom-green md:mr-1"
+                className="items-center justify-center w-auto px-4 py-2 mx-8 mb-3 font-bold rounded hover:text-custom-blue hover:bg-custom-green lg:inline-flex bg-custom-blue text-custom-green md:mr-1"
               >
                 Login
               </Link>
               <Link
                 to="/Register"
-                className="items-center justify-center w-auto px-4 py-2 mx-2 mb-3 font-bold rounded text-custom-blue bg-custom-green lg:inline-flex hover:bg-custom-blue hover:text-custom-green hover:ring-2 hover:ring-custom-green"
+                className="items-center justify-center w-auto px-4 py-2 ml-5 mb-3 font-bold rounded text-custom-blue bg-custom-green lg:inline-flex hover:bg-custom-blue hover:text-custom-green hover:ring-2 hover:ring-custom-green"
               >
                 Register
               </Link>

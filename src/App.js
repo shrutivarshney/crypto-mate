@@ -5,7 +5,10 @@ import Homepage from "./Pages/homepage";
 import Videos from "./Pages/Videos";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
-import Blogpage from "./Pages/blogpage";
+import Blogpage from "./Pages/Blogpage";
+import TnC from "./Pages/TnC";
+import Privacy from "./Pages/Privacy";
+import Layout from "./components/blog/Layout";
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
           <Route path="/Register" element={<Register />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Blogs" element={<Blogpage />} />
+          <Route path="/TnC" element={<TnC/>} />
+          <Route path="/Privacy" element={<Privacy/>} />
+          <Route path="/Layout" element={<Layout/>} />
         </Routes>
       </div>
     </BrowserRouter>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -102,22 +103,22 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="pt-3 text-xs">
+        <div className="py-3 text-xs">
           Copyright © 2021 | Cryptomate
-          <div className="float-right pb-2">
-            <a
-              href="https://www.termsandconditionsgenerator.com/live.php?token=mC3CLBbpZHH1leTS1ZPJtZnJpIyQWywh"
+          <div className="pb-3 float-right">
+            <Link
+              to="/Tnc"
               className="hover:text-custom-green"
             >
               Terms & Conditions
-            </a>{" "}
+            </Link>{" "}
             &emsp;|&emsp;
-            <a
-              href="https://www.privacypolicygenerator.info/live.php?token=fFNgpc7cj8VEA0HLEjBdvTGxiwWygzVU"
+            <Link
+              to="/Privacy"
               className="hover:text-custom-green"
             >
               Privacy Policy
-            </a>
+            </Link>
           </div>
         </div>
       </div>
