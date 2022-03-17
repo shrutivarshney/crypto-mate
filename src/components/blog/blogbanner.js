@@ -1,8 +1,7 @@
 import React from "react";
-
 import "./layout.css";
 
-function blogbanner() {
+function Blogbanner() {
   return (
     <div className="flex flex-wrap justify-center gap-6 py-4 card-section w-100">
       <div className="box">
@@ -103,4 +102,4 @@ function blogbanner() {
   );
 }
 
-export default blogbanner;
+export default Blogbanner;

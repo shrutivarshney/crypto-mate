@@ -3,7 +3,7 @@ import Blog from "../components/blog/blog"
 import Footer from '../components/shared/Footer/footer';
 import Navbar from '../components/shared/Navbar/navbar';
 
-function blogpage() {
+function Blogpage() {
   return (
     <div >
       <Navbar />
@@ -13,4 +13,4 @@ function blogpage() {
   );
 };
 
-export default blogpage
+export default Blogpage
