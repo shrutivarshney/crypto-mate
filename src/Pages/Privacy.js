@@ -9,7 +9,7 @@ const Privacy = () => {
       <div className="flex items-center justify-center min-h-screen font-poppins">
         <div className="flex flex-col justify-center py-5 text-white bg-black bg-opacity-40 rounded-lg shadow px-12 md:px-8 lg:px-10">
           <div className="flex justify-center">
-            <div className="text-lg py-4 font-bold text-custom-green">
+            <div className="text-lg md:text-4xl py-4 font-bold text-custom-green">
               Privacy Policy for Crypto Mate
             </div>
           </div>
