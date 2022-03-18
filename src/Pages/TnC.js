@@ -9,7 +9,7 @@ const TnC = () => {
       <div className="flex items-center justify-center min-h-screen font-poppins">
         <div className="flex flex-col justify-center py-5 text-white bg-black bg-opacity-40 rounded-lg shadow px-12 md:px-8 lg:px-10">
           <div className="flex justify-center">
-            <div className="text-lg font-bold py-4 text-custom-green">Terms and Conditions</div>
+            <div className="text-lg md:text-4xl font-bold py-4 text-custom-green">Terms and Conditions</div>
           </div>
           <div className="py-1">Welcome to crypto-mate!</div>
 
