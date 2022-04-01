@@ -62,8 +62,8 @@ const Chart = ({ coins, loading }) => {
                         style={{
                           color:
                             coin.price_change_percentage_24h < 0
-                              ? "#d83f4a"
-                              : "#48f188",
+                              ? "#ff4527"
+                              : "#48da3b",
                         }}
                       >
                         {coin.price_change_percentage_24h}%

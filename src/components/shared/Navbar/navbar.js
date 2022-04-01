@@ -54,28 +54,40 @@ const Navbar = () => {
                   </button>
                   <div className="absolute z-10 hidden w-48 py-2 rounded-md shadow-md left-4 bg-custom-blue shadow-custom-green group-hover:block">
                     <Link
-                      to="/"
+                      to="/DepositPage"
                       className="block px-4 py-2 font-bold text-white hover:bg-custom-green hover:text-custom-blue"
                     >
-                      a
+                      <i className="fa-solid fa-building-columns"></i>
+                      Deposit
                     </Link>
                     <Link
                       to="/"
                       className="block px-4 py-2 font-bold text-white hover:bg-custom-green hover:text-custom-blue"
                     >
-                      a
+                      Credit/Debit Card
+                    </Link>
+                    <Link
+                      to="/"
+                      className="block px-4 py-2 font-bold text-white hover:bg-custom-green hover:text-custom-blue"
+                    >
+                      Cash Balance
                     </Link>
                   </div>
                 </div>
               </li>
               {/*<li className="py-1">
                 <div className="relative pb-2 lg:pb-0">
+<<<<<<< HEAD
                   <button
                     href="/Market"
+=======
+                  <Link
+                    to="/MarketPage"
+>>>>>>> 92e7393eac8be2b7d410e42ceda46f0c674d631c
                     className="items-center justify-center w-full px-4 font-bold text-white rounded lg:inline-flex lg:w-auto"
                   >
                     Markets
-                  </button>
+                  </Link>
                 </div>
           </li>*/}
               <li className="py-1">

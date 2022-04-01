@@ -1,34 +1,42 @@
-import React, { useState } from "react";
+import React, { useCallback } from "react";
+import fire from "../config/fire";
 import { Link } from "react-router-dom";
+import {
+  useLocation,
+  useNavigate,
+  useParams
+} from "react-router-dom";
+  
+  const Register = ({ history }) => {
+    const handleSignUp = useCallback(async event => {
+      event.preventDefault();
+      const { email, password, fullName, username } = event.target.elements;
+      try {
+        await fire
+          .auth()
+          .createUserWithEmailAndPassword(email.value, password.value, fullName.value, username.value);
+        history.push("/");
+      } catch (error) {
+        alert(error);
+      }
+    }, [history]);
 
-const Register = () => {
-  const [user, setUser] = useState({
-    fullName: "",
-    username: "",
-    email: "",
-    password: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setUser({
-      ...user,
-      [name]: value,
-    });
-  };
-
-  const egister = (e) => {
-    e.preventDefault();
-    const { fullName, username, email, password } = user;
-    if (fullName && username && email && password) {
-      //   axios
-      //     .post("http://localhost:5000/app/Register", user)
-      //     .then((res) => console.log(res));
-    } else {
-      alert("invalid input");
+    function withRouter(Component) {
+      function ComponentWithRouterProp(props) {
+        let location = useLocation();
+        let navigate = useNavigate();
+        let params = useParams();
+        return (
+          <Component
+            {...props}
+            router={{ location, navigate, params }}
+          />
+        );
+      }
+    
+      return ComponentWithRouterProp;
     }
-  };
-
+    
   return (
     <div className="flex items-center justify-center min-h-screen">
       <div className="flex flex-col max-w-md px-4 py-5 my-4 bg-opacity-50 rounded-lg shadow bg-custom-blue sm:px-6 md:px-8 lg:px-10">
@@ -43,7 +51,7 @@ const Register = () => {
         <span className="self-center mx-auto">Register</span>
       </div>
         <div className="p-6">
-          <form>
+          <form onSubmit={handleSignUp}>
             <div className="flex flex-col gap-4 mb-2">
               <div className="flex flex-col gap-4 mb-1">
                 <div className="relative">
@@ -51,8 +59,6 @@ const Register = () => {
                     type="text"
                     className="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-transparent border-gray-300 rounded-lg shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-custom-green focus:border-transparent"
                     name="fullName"
-                    value={user.fullName}
-                    onChange={handleChange}
                     placeholder="Full Name"
                   />
                 </div>
@@ -63,8 +69,6 @@ const Register = () => {
                     type="text"
                     className="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-transparent border-gray-300 rounded-lg shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-custom-green focus:border-transparent"
                     name="username"
-                    value={user.username}
-                    onChange={handleChange}
                     placeholder="Username"
                   />
                 </div>
@@ -74,8 +78,6 @@ const Register = () => {
                       type="text"
                       className="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-transparent border-gray-300 rounded-lg shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-custom-green focus:border-transparent"
                       name="email"
-                      value={user.email}
-                      onChange={handleChange}
                       placeholder="Email"
                     />
                   </div>
@@ -86,8 +88,6 @@ const Register = () => {
                       type="password"
                       className="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-transparent border-gray-300 rounded-lg shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-custom-green focus:border-transparent"
                       name="password"
-                      value={user.password}
-                      onChange={handleChange}
                       placeholder="Password"
                     />
                   </div>
@@ -98,7 +98,6 @@ const Register = () => {
                     className="w-full px-4 py-2 text-center text-white transition duration-200 ease-in rounded-lg shadow-md cursor-pointer bg-custom-green hover:bg-transparent hover:ring-custom-green focus:outline-none hover:ring-2 hover:text-custom-green"
                     id="create-account-email"
                     value="Register"
-                    onClick={(e) => egister(e)}
                   />
                 </div>
               </div>
