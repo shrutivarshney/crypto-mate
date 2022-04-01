@@ -75,16 +75,21 @@ const Navbar = () => {
                   </div>
                 </div>
               </li>
-              <li className="py-1">
+              {/*<li className="py-1">
                 <div className="relative pb-2 lg:pb-0">
+<<<<<<< HEAD
+                  <button
+                    href="/Market"
+=======
                   <Link
                     to="/MarketPage"
+>>>>>>> 92e7393eac8be2b7d410e42ceda46f0c674d631c
                     className="items-center justify-center w-full px-4 font-bold text-white rounded lg:inline-flex lg:w-auto"
                   >
                     Markets
                   </Link>
                 </div>
-              </li>
+          </li>*/}
               <li className="py-1">
                 <div className="relative group">
                   <button

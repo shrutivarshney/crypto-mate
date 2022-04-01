@@ -18,11 +18,9 @@ function App() {
     <BrowserRouter>
       <div className="App bg-[url('../public/bg.png')] bg-repeat font-poppins">
         <Routes>
+          <Route path="/" element={<Homepage />} />
           <Route path="/GraphPage" element={<GraphPage />} />
           <Route path="/Videos" element={<Videos />} />
-          <Route path="/Blogs" element={<Blogpage />} />
-          <Route path="/DepositPage" element={<DepositPage />} />
-          <Route path="/" element={<Homepage />} />
           <Route path="/Register" element={<Register />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Blogs" element={<Blogpage />} />
