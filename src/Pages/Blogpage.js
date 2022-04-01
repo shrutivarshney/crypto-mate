@@ -13,4 +13,4 @@ function Blogpage() {
   );
 };
 
-export default Blogpage
+export default Blogpage;

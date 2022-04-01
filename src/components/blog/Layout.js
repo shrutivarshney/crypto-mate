@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./layout.css";
+import "../Learn/blog/layout.css";
 import axios from "axios";
 
 const Layout = () => {

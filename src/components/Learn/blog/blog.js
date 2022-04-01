@@ -1,7 +1,6 @@
 import React from "react";
-import Layout from "./Layout";
-import "./layout.css";
-import Blogbanner from "./Blogbanner";
+import Layout from "../../blog/Layout";
+import Blogbanner from "./blogbanner";
 
 function blog() {
   return (
