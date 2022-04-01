@@ -9,6 +9,7 @@ import Blogpage from "./Pages/Blogpage";
 import TnC from "./Pages/TnC";
 import Privacy from "./Pages/Privacy";
 import Layout from "./components/blog/Layout";
+import Market from "./Pages/marketPage"
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/TnC" element={<TnC/>} />
           <Route path="/Privacy" element={<Privacy/>} />
           <Route path="/Layout" element={<Layout/>} />
+          <Route path="/Market" element={<Market />} />
         </Routes>
       </div>
     </BrowserRouter>

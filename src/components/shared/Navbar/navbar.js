@@ -68,16 +68,16 @@ const Navbar = () => {
                   </div>
                 </div>
               </li>
-              <li className="py-1">
+              {/*<li className="py-1">
                 <div className="relative pb-2 lg:pb-0">
                   <button
-                    href="/"
+                    href="/Market"
                     className="items-center justify-center w-full px-4 font-bold text-white rounded lg:inline-flex lg:w-auto"
                   >
                     Markets
                   </button>
                 </div>
-              </li>
+          </li>*/}
               <li className="py-1">
                 <div className="relative group">
                   <button
