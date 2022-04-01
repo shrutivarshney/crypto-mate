@@ -1,17 +1,31 @@
 a.cryptocompare-logo {
   display: none;
 }
-
+.chartTypeTabLinks{
+  margin-top: 20px;
+  color: #fff;
+  background-color: #061122!important;
+  padding: 12px 45px 10px!important;
+  font-size: 18px!important;
+}
 .cTypeTabActive {
   background-color: #42db7c !important;
   color: #061122 !important;
 }
 
 .chartTypeTabLinks:hover {
-  background-color: rgb(206,206,206) !important;
+  background-color: #cecece !important;
   color: #061122 !important;
 }
 
+.tablinks{
+  border: 3px solid #061122!important;
+  padding: 5px 20px!important;
+}
+
+.tablinks.active{
+  border: 3px solid #42db7c!important;
+}
 
 /* 
 .tabperiods {

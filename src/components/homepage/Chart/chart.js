@@ -42,7 +42,7 @@ const Chart = ({ coins, loading }) => {
                 </thead>
                 <tbody>
                   {coins.map((coin) => (
-                    <tr className="text-white">
+                    <tr className="text-white" key={coin.key}>
                       <td className="px-2 py-4 text-sm md:px-6 whitespace-nowrap md:text-lg ">
                         <img
                           src={coin.image}
