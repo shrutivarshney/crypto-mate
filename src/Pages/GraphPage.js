@@ -8,7 +8,7 @@ const GraphPage = () => {
   return (
     <>
       <Navbar />
-      <Graph />
+      <Graph classname="my-8" />
       <Footer />
     </>
   );
