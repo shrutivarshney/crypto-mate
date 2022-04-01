@@ -6,18 +6,22 @@ import Videos from "./Pages/Videos";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import Blogpage from "./Pages/blogpage";
+import { DepositPage } from "./Pages/DepositPage";
+import { AuthProvider } from "./Pages/Auth";
+import PrivateRoute from "./Pages/PrivateRoute";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App bg-[url('../public/bg.png')] bg-repeat font-poppins">
         <Routes>
-          <Route path="/" element={<Homepage />} />
           <Route path="/GraphPage" element={<GraphPage />} />
           <Route path="/Videos" element={<Videos />} />
+          <Route path="/Blogs" element={<Blogpage />} />
+          <Route path="/DepositPage" element={<DepositPage />} />
+          <Route path="/" element={<Homepage />} />
           <Route path="/Register" element={<Register />} />
           <Route path="/Login" element={<Login />} />
-          <Route path="/Blogs" element={<Blogpage />} />
         </Routes>
       </div>
     </BrowserRouter>

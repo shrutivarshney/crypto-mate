@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import fire from "../config/fire";
 
 const Login = () => {
   const [user, setUser] = useState({

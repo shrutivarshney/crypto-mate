@@ -13,11 +13,11 @@ const Footer = () => {
                 className="w-24 h-24 shadow-md"
               />
             </a>
-            <ul className="pt-5 text-lg list-style-type-none text-custom-green">
-              <i className="pr-3 fab fa-facebook hover:cursor-pointer hover:text-xl hover:text-gray-300"></i>
-              <i className="pr-3 fab fa-twitter hover:cursor-pointer hover:text-xl hover:text-gray-300"></i>
-              <i className="pr-3 fab fa-instagram hover:cursor-pointer hover:text-xl hover:text-gray-300"></i>
-              <i className="fab fa-linkedin hover:cursor-pointer hover:text-xl hover:text-gray-300"></i>
+            <ul className="pt-5 text-lg list-style-type-none text-gray-300">
+              <i className="pr-3 fab fa-facebook hover:cursor-pointer hover:text-xl hover:text-custom-green"></i>
+              <i className="pr-3 fab fa-twitter hover:cursor-pointer hover:text-xl hover:text-custom-green"></i>
+              <i className="pr-3 fab fa-instagram hover:cursor-pointer hover:text-xl hover:text-custom-green"></i>
+              <i className="fab fa-linkedin hover:cursor-pointer hover:text-xl hover:text-custom-green"></i>
             </ul>
           </div>
           <div>
